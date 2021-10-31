@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Logo</ion-title>
+    <ion-item class="head">
+      <ion-label >Search</ion-label>
+      <ion-input type="text" [(ngModel)]="searchTerm"></ion-input>
+      <ion-icon name="search-outline" slot="end"></ion-icon>
+    </ion-item>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list>
+
+
+<ul *ngIf="brews">
+  <li *ngFor="let brew of brews | filter:searchTerm">
+
+    <ion-item (click)="productPage()">
+      <ion-thumbnail slot="end">
+        <img src="assets/2.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Name:{{brew.name}}</h2>
+        <h4>Brand:{{brew.state}}</h4><br>
+        <h3>Price:{{brew.city}}</h3><br>
+        
+      </ion-label>
+    </ion-item>
+
+  </li>
+</ul>
+  
+</ion-list>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "BdayBash",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

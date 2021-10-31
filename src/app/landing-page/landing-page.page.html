@@ -1,0 +1,137 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Logo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="Sliders">
+
+    <ion-items>
+      <ion-header>
+        <h1>New Arrivals</h1>
+      </ion-header>
+      <div class="item-slider">
+
+        <ion-slides [options]="slideOpts">
+  
+          <ion-slide *ngFor="let item of brews">
+            <ion-col>
+              <ion-card class="ion-margin-top">
+                <ion-card-header class="ion-no-padding">
+                  <img src="assets/1.jpg">
+                  <ion-card-title class="ion-padding">ProductName:{{ item.name }}</ion-card-title>
+                </ion-card-header>
+    
+                <ion-card-content>
+                 Brand Name:{{ item.state }}
+                </ion-card-content>
+    
+              </ion-card>
+            </ion-col>
+          </ion-slide>
+  
+        </ion-slides>
+      </div>
+      
+      
+    </ion-items>
+  </div>
+   <ion-items>
+     <ion-header>
+       <h1>Product of the Day</h1>
+     </ion-header>
+     <ion-card>
+       <img src="assets/3.jpg">
+       <ion-label>
+         <ion-card-title>
+           Product Brand
+          </ion-card-title>
+       </ion-label>
+     </ion-card>
+   </ion-items><br>
+
+<div class="Sliders">
+  
+  <ion-items>
+    <ion-header>
+      <h1>Best Seller</h1>
+    </ion-header>
+    <div class="item-slider">
+
+      <ion-slides [options]="slideOpts">
+
+        <ion-slide *ngFor="let item of brews">
+          <ion-col>
+            <ion-card class="ion-margin-top">
+              <ion-card-header class="ion-no-padding">
+                <img src="assets/2.jpg">
+                <ion-card-title class="ion-padding">ProductName:{{ item.name }}</ion-card-title>
+              </ion-card-header>
+  
+              <ion-card-content>
+               Brand Name:{{ item.state }}
+              </ion-card-content>
+  
+            </ion-card>
+          </ion-col>
+        </ion-slide>
+
+      </ion-slides>
+    </div>
+    
+  </ion-items>
+</div>
+
+
+  <ion-items>
+    <ion-header>
+      <h1>Discount of the Day</h1>
+    </ion-header>
+    <ion-card>
+      <img src="assets/1.jpg">
+      <ion-label>
+        <ion-card-title>
+          Product Name
+         </ion-card-title>
+      </ion-label>
+    </ion-card>
+  </ion-items>
+
+  <div class="Sliders">
+    
+    <ion-items>
+      <ion-header>
+        <h1>Shop by Brand</h1>
+      </ion-header>
+      <div class="item-slider">
+
+        <ion-slides [options]="slideOpts">
+  
+          <ion-slide *ngFor="let item of brews">
+            <ion-col>
+              <ion-card class="ion-margin-top">
+                <ion-card-header class="ion-no-padding">
+                  <img src="assets/2.jpg">
+                  <ion-card-title class="ion-padding">ProductName:{{ item.name }}</ion-card-title>
+                </ion-card-header>
+    
+                <ion-card-content>
+                 Brand Name:{{ item.state }}
+                </ion-card-content>
+    
+              </ion-card>
+            </ion-col>
+          </ion-slide>
+  
+        </ion-slides>
+      </div>
+    </ion-items>
+  </div>
+
+
+
+
+
+
+</ion-content>
