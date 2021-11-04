@@ -11,14 +11,14 @@
 </ion-header>
 
 <ion-content>
-  
+  <ion-button expand="block" color="dark" (click)="openModal()">Filters</ion-button>
   <ion-list>
 
 
 <ul *ngIf="brews">
   <li *ngFor="let brew of brews | filter:searchTerm">
 
-    <ion-item (click)="productPage()">
+    <ion-item (click)="productPage()" class="list">
       <ion-thumbnail slot="end">
         <img src="assets/2.jpg">
       </ion-thumbnail>

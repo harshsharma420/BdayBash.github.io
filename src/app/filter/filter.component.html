@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Filters</ion-title>
+  <ion-buttons slot="end">
+    <ion-button (click)="dismissModal()">
+      Close
+      <ion-icon name="Close" slot="start"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h1>City</h1>
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="searchTerm"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  </ion-content>

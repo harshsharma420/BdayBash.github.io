@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { HelpPageRoutingModule } from './help-routing.module';
 
 import { HelpPage } from './help.page';
+import { ReviewComponent } from '../review/review.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { HelpPage } from './help.page';
     IonicModule,
     HelpPageRoutingModule
   ],
-  declarations: [HelpPage]
+  declarations: [HelpPage, ReviewComponent],
+  entryComponents: [ReviewComponent]
 })
 export class HelpPageModule {}
